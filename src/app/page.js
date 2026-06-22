@@ -70,8 +70,8 @@ export default function MaintenancePage() {
             KOMPONEN 3: WRAPPER KOTAK DESKRIPSI GLASS
             ================================================================ */}
         <div className="relative w-full max-w-md md:max-w-[520px] md:col-span-7 md:row-start-2 md:justify-self-start">
-          <div className="absolute -top-6 -right-6 w-[75px] h-[75px] md:w-[95px] md:h-[95px] bg-primary-brand rounded-full z-0"></div>
-          <div className="absolute -bottom-4 -left-4 w-[54px] h-[54px] md:w-[64px] md:h-[64px] bg-secondary-brand rounded-full z-0"></div>
+          <div className="absolute -top-6 -right-6 w-[75px] h-[75px] md:w-[95px] md:h-[95px] bg-secondary-brand rounded-full z-0"></div>
+          <div className="absolute -bottom-4 -left-4 w-[54px] h-[54px] md:w-[64px] md:h-[64px] bg-primary-brand rounded-full z-0"></div>
 
           <div className="glass p-6 rounded-xl w-full flex items-center shadow-md relative z-10">
             <p className="text-[18px] md:text-[18px] text-center md:text-left leading-relaxed text-foreground/90">
