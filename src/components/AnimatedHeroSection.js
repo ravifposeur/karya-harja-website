@@ -45,19 +45,16 @@ export default function AnimatedHeroSection() {
         Investasi Masa Depan Anda
       </motion.span>
 
-      {/* Heading */}
+      {/* Heading Baru (Font Standar, Bold, No Italic) */}
       <motion.h1
         variants={fadeInUp}
         initial="initial"
         whileInView="whileInView"
         viewport={fadeInUp.viewport}
         transition={{ ...fadeInUp.transition, delay: 0.1 }}
-        className="text-[40px] md:text-[64px] text-foreground leading-[1.1] font-bold max-w-4xl"
+        className="text-[36px] md:text-[52px] text-primary-brand leading-[1.2] font-extrabold max-w-4xl"
       >
-        Temukan Properti <br className="hidden md:block" />
-        <span className="font-display italic font-bold text-primary-brand">
-          Eksklusif & Terpercaya
-        </span>
+        Pusat Jual Beli & Pemasaran Properti Terbesar Solo Raya
       </motion.h1>
 
       {/* Deskripsi */}
@@ -69,8 +66,7 @@ export default function AnimatedHeroSection() {
         transition={{ ...fadeInUp.transition, delay: 0.2 }}
         className="mt-4 text-lg md:text-xl text-text-muted max-w-2xl leading-relaxed"
       >
-        Karya Harja Property membantu Anda menemukan rumah impian dan lahan
-        strategis dengan legalitas aman dan harga transparan.
+        Proses mudah, aman, dan transparan untuk setiap kebutuhan properti Anda.
       </motion.p>
 
       {/* CTA Button */}
@@ -99,17 +95,40 @@ export default function AnimatedHeroSection() {
           Hubungi via WhatsApp
         </a>
       </motion.div>
-
-      {/* Sosial Media */}
+      <motion.div
+        variants={fadeInUp}
+        initial="initial"
+        whileInView="whileInView"
+        viewport={fadeInUp.viewport}
+        transition={{ ...fadeInUp.transition, delay: 0.3 }}
+        className="mt-12 glass p-6 md:p-8 rounded-3xl border border-outline-primary/40 shadow-lg max-w-3xl w-full text-center"
+      >
+        <h2 className="font-display italic font-bold text-2xl md:text-3xl text-primary-brand mb-3">
+          Tentang Kami
+        </h2>
+        <motion.p
+          variants={fadeInUp}
+          initial="initial"
+          whileInView="whileInView"
+          viewport={fadeInUp.viewport}
+          transition={{ ...fadeInUp.transition, delay: 0.2 }}
+          className="mt-4 text-lg md:text-xl text-text-muted max-w-2xl leading-relaxed"
+        >
+          <b>Karya Harja Property</b> adalah mitra terpercaya dalam jual beli
+          dan pemasaran tanah, rumah, ruko, gudang, dan real estate di Solo Raya
+          dan sekitarnya.
+        </motion.p>
+      </motion.div>
+      {/* Media Sosial Besar */}
       <motion.div
         variants={staggerContainer}
         initial="initial"
         whileInView="whileInView"
         viewport={staggerContainer.viewport}
-        className="mt-12 flex flex-col items-center justify-center gap-5 text-text-muted w-full"
+        className="mt-8 flex flex-col items-center justify-center gap-5 text-text-muted w-full"
       >
         <motion.span variants={fadeInUp} className="text-large font-medium">
-          Ikuti Kami di Sosial Media
+          Ikuti dan temukan pilihan properti terbaik di media sosial kami
         </motion.span>
         <div className="flex gap-4 md:gap-6">
           {socialLinks.map((social, idx) => (
@@ -118,7 +137,7 @@ export default function AnimatedHeroSection() {
               variants={fadeInUp}
               href={social.link}
               aria-label={social.name}
-              whileHover={{ y: -8, scale: 1.1 }}
+              whileHover={{ y: -8, scale: 1.05 }}
               transition={{ type: "spring", stiffness: 300 }}
               className="w-16 h-16 md:w-18 md:h-18 rounded-full glass flex items-center justify-center shadow-md border border-outline-primary/50 hover:shadow-xl hover:bg-white/50"
             >

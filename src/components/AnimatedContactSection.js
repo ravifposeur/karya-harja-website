@@ -7,7 +7,7 @@ export default function AnimatedContactSection() {
   return (
     <section
       id="kontak"
-      className="py-16 px-6 md:px-16 w-full max-w-7xl mx-auto z-10 relative"
+      className="py-12 px-6 md:px-16 w-full max-w-7xl mx-auto z-10 relative"
     >
       <motion.div
         variants={scaleIn}

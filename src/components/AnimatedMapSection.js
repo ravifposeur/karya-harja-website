@@ -15,7 +15,7 @@ export default function AnimatedMapSection() {
   }, []);
 
   return (
-    <section className="py-16 md:py-20 px-4 md:px-16 w-full max-w-7xl mx-auto z-10 relative">
+    <section className="py-12 md:py-20 px-4 md:px-16 w-full max-w-7xl mx-auto z-10 relative">
       <motion.div
         variants={fadeInUp}
         initial="initial"
@@ -28,7 +28,8 @@ export default function AnimatedMapSection() {
           Kunjungi Kami
         </h2>
         <p className="text-text-muted text-base md:text-xl max-w-2xl mx-auto leading-relaxed">
-          Datang langsung ke kantor kami untuk konsultasi lebih lanjut.
+          Ingin konsultasi lebih lanjut? Silakan datang ke kantor kami. Klik
+          peta di bawah ini untuk panduan rute.
         </p>
       </motion.div>
 
@@ -66,40 +67,7 @@ export default function AnimatedMapSection() {
           </div>
 
           <div className="relative p-5 md:p-10 bg-white/60 backdrop-blur-xl border-t border-white/30">
-            <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-6">
-              <motion.div
-                animate={mapLoaded ? { scale: [1, 1.05, 1] } : {}}
-                transition={{
-                  repeat: Infinity,
-                  duration: 3,
-                  ease: "easeInOut",
-                }}
-                className="w-10 h-10 md:w-16 md:h-16 bg-gradient-to-br from-primary-brand/20 to-primary-brand/5 rounded-2xl flex items-center justify-center flex-shrink-0 self-start shadow-inner"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="text-primary-brand w-6 h-6 md:w-8 md:h-8"
-                >
-                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                  <circle cx="12" cy="10" r="3" />
-                </svg>
-              </motion.div>
-              <div className="flex-1">
-                <h3 className="text-xl md:text-2xl font-bold text-foreground mb-1 tracking-tight">
-                  Karya Harja Property
-                </h3>
-                <p className="text-text-muted text-sm md:text-xl leading-relaxed font-medium">
-                  Jl Raya Batu Jamus - Gerompol Km 4,5 Kedawung, Sragen
-                </p>
-              </div>
+            <div className="flex flex-col md:items-center gap-4 md:gap-6">
               <a
                 href="https://maps.app.goo.gl/mMZ9RA5BBxT42PAx6"
                 target="_blank"
@@ -120,7 +88,7 @@ export default function AnimatedMapSection() {
                   <path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z" />
                   <circle cx="12" cy="10" r="3" />
                 </svg>
-                Dapatkan Arah
+                Buka di Maps
               </a>
             </div>
           </div>
