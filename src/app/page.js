@@ -6,6 +6,7 @@ import AnimatedContactSection from "@/components/AnimatedContactSection";
 import AnimatedMapSection from "@/components/AnimatedMapSection";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 import Maintenance from "@/components/Maintenance";
+import AnimatedPartnerSection from "@/components/AnimatedPartnerSection";
 import { client } from "@/sanity/lib/client";
 
 export default async function LandingPage() {
@@ -52,17 +53,13 @@ export default async function LandingPage() {
   return (
     <main className="w-full relative font-sans overflow-x-hidden scroll-smooth">
       {/* Background layers */}
-      <div className="fixed inset-0 bg-topografi bg-cover bg-center opacity-[0.03] pointer-events-none z-0" />
-      <div className="absolute right-[-10%] top-[-5%] w-[400px] h-[400px] bg-secondary-brand rounded-full opacity-20 blur-[100px] pointer-events-none z-0" />
-      <div className="absolute left-[-10%] top-[30%] w-[300px] h-[300px] bg-primary-brand rounded-full opacity-10 blur-[100px] pointer-events-none z-0" />
-
       <AnimatedNavbar />
       <AnimatedHeroSection />
       <AnimatedAboutSection />
       {/* <AnimatedPropertiesSection properties={formattedProperties} /> */}
       <AnimatedMapSection />
-
-      <footer className="w-full mt-16 bg-gradient-to-b from-white/10 to-white/5 backdrop-blur-lg border-t border-white/20 shadow-inner">
+      <AnimatedPartnerSection />
+      <footer className="w-full mt-4 bg-gradient-to-b from-white/10 to-white/5 backdrop-blur-lg border-t border-white/20 shadow-inner">
         <div className="max-w-7xl mx-auto px-6 md:px-16 py-16">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-left">
             {/* 1. Hubungi Kami (Brand) */}

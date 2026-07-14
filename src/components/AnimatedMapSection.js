@@ -24,7 +24,7 @@ export default function AnimatedMapSection() {
         transition={fadeInUp.transition}
         className="text-center mb-8 md:mb-12"
       >
-        <h2 className="font-display italic font-bold text-3xl md:text-5xl text-primary-brand mb-3">
+        <h2 className=" font-bold text-3xl md:text-5xl text-primary-brand mb-3">
           Kunjungi Kami
         </h2>
         <p className="text-text-muted text-base md:text-xl max-w-2xl mx-auto leading-relaxed">

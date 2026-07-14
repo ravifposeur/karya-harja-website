@@ -22,7 +22,7 @@ const socialLinks = [
   },
   {
     name: "YouTube",
-    link: "https://youtube.com/@karyaharjaproperty",
+    link: "https://youtube.com/@jualbelitanahsragenkaranganyar",
     src: "/youtube.svg",
   },
 ];
@@ -40,7 +40,7 @@ export default function AnimatedHeroSection() {
         whileInView="whileInView"
         viewport={fadeInUp.viewport}
         transition={fadeInUp.transition}
-        className="text-secondary-brand font-medium tracking-widest uppercase text-sm mb-2"
+        className="text-secondary-brand font-bold tracking-widest uppercase text-sm mb-2"
       >
         Investasi Masa Depan Anda
       </motion.span>
@@ -54,7 +54,8 @@ export default function AnimatedHeroSection() {
         transition={{ ...fadeInUp.transition, delay: 0.1 }}
         className="text-[36px] md:text-[52px] text-primary-brand leading-[1.2] font-extrabold max-w-4xl"
       >
-        Pusat Jual Beli & Pemasaran Properti Terbesar Solo Raya
+        Pusat Jual Beli dan
+        Pemasaran Properti Terbesar Solo Raya
       </motion.h1>
 
       {/* Deskripsi */}
@@ -103,7 +104,7 @@ export default function AnimatedHeroSection() {
         transition={{ ...fadeInUp.transition, delay: 0.3 }}
         className="mt-12 glass p-6 md:p-8 rounded-3xl border border-outline-primary/40 shadow-lg max-w-3xl w-full text-center"
       >
-        <h2 className="font-display italic font-bold text-2xl md:text-3xl text-primary-brand mb-3">
+        <h2 className=" font-bold text-2xl md:text-3xl text-primary-brand mb-3">
           Tentang Kami
         </h2>
         <motion.p
@@ -114,7 +115,7 @@ export default function AnimatedHeroSection() {
           transition={{ ...fadeInUp.transition, delay: 0.2 }}
           className="mt-4 text-lg md:text-xl text-text-muted max-w-2xl leading-relaxed"
         >
-          <b>Karya Harja Property</b> adalah mitra terpercaya dalam jual beli
+          Karya Harja Property adalah mitra terpercaya dalam jual beli
           dan pemasaran tanah, rumah, ruko, gudang, dan real estate di Solo Raya
           dan sekitarnya.
         </motion.p>
