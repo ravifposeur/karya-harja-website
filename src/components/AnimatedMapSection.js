@@ -15,7 +15,7 @@ export default function AnimatedMapSection() {
   }, []);
 
   return (
-    <section className="py-12 md:py-20 px-4 md:px-16 w-full max-w-7xl mx-auto z-10 relative">
+    <section className="py-12 md:py-16 px-4 md:px-16 w-full max-w-7xl mx-auto z-10 relative">
       <motion.div
         variants={fadeInUp}
         initial="initial"
