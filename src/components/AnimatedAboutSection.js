@@ -31,9 +31,9 @@ export default function AnimatedAboutSection() {
       <div className="text-center mb-12 md:mb-16 relative z-10">
         <motion.h2
           variants={fadeInUp}
-          className="font-bold text-3xl md:text-5xl text-primary-brand mb-6"
+          className="font-bold text-3xl md:text-5xl text-primary-brand mb-6 leading-normal"
         >
-          Mengapa Memilih Karya Harja Property?
+          Mengapa Memilih <br /> Karya Harja Property?
         </motion.h2>
         {/* Garis batas elegan di bawah judul utama */}
 

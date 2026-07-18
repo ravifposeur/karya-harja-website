@@ -7,7 +7,6 @@ import { fadeInUp } from "@/lib/animations";
 export default function AnimatedPartnerSection() {
   return (
     <section className="py-4 px-6 w-full max-w-xl mx-auto z-10 relative text-center">
-      {/* 🟢 Judul dikeluarkan dari box & ditaruh di atas */}
       <motion.div
         variants={fadeInUp}
         initial="initial"
@@ -15,27 +14,33 @@ export default function AnimatedPartnerSection() {
         viewport={{ once: true }}
         className="mb-4"
       >
-        <span className="text-xl font-bold text-text-muted uppercase tracking-widest">
-          Mitra Strategis Kami
-        </span>
+        <h2 className=" font-bold text-2xl md:text-3xl text-primary-brand mb-3">
+          PARTNER RESMI KAMI
+        </h2>
+
+        <p className="text-text-muted text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
+          Bersama JOS Property, kami menghadirkan jaringan pemasaran properti yang lebih luas, profesional, dan terpercaya di Solo Raya.
+        </p>
       </motion.div>
 
-      {/* 🟢 Kotak Glass khusus membungkus logo secara compact */}
       <motion.div
         variants={fadeInUp}
         initial="initial"
         whileInView="whileInView"
         viewport={{ once: true, amount: 0.5 }}
         transition={{ ...fadeInUp.transition, delay: 0.1 }}
-        className="glass px-8 py-5 rounded-2xl border border-outline-primary/40 shadow-sm flex items-center justify-center transition-all hover:shadow-md hover:bg-white/40 group"
+        className="glass px-12 py-6 rounded-2xl border border-outline-primary/40 shadow-sm flex flex-col items-center justify-center transition-all hover:shadow-md hover:bg-white/40 group"
+
       >
+        <span className="text-lg font-bold text-text-muted uppercase tracking-widest">
+          Kunjungi JOS Property
+        </span>
         <a
-          href="https://www.josproperty.com" // TODO: Jangan lupa ganti # dengan link asli
+          href="https://www.josproperty.id"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-3"
         >
-          {/* Logo Jos Property */}
           <Image
             src="/josproperty.png"
             alt="Logo Jos Property"

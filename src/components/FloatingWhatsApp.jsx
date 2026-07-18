@@ -8,7 +8,7 @@ export default function FloatingWhatsApp() {
 
   return (
     <div className="fixed bottom-5 right-5 md:bottom-8 md:right-8 z-[100] flex flex-col items-end">
-      {/* Overlay + Pop-up */}
+
       <AnimatePresence>
         {isOpen && (
           <>
@@ -113,7 +113,7 @@ export default function FloatingWhatsApp() {
         )}
       </AnimatePresence>
 
-      {/* Tombol Trigger Minimal */}
+      {/* Tombol Trigger */}
       <motion.button
         onClick={() => setIsOpen(!isOpen)}
         whileHover={{ scale: 1.1 }}
@@ -122,7 +122,6 @@ export default function FloatingWhatsApp() {
         className="bg-[#25D366] hover:bg-[#20b858] p-3 rounded-full w-16 h-16 flex items-center justify-center text-white shadow-[0_10px_25px_rgba(37,211,102,0.4)] border-none transition-colors"
       >
         {isOpen ? (
-          /* Ikon Close Tetap Sama */
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -138,7 +137,6 @@ export default function FloatingWhatsApp() {
             <line x1="6" y1="6" x2="18" y2="18" />
           </svg>
         ) : (
-          /* Ikon WA Tetap Sama */
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 448 512"
