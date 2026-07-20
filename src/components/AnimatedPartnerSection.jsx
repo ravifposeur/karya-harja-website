@@ -15,7 +15,7 @@ export default function AnimatedPartnerSection() {
         className="mb-4"
       >
         <h2 className=" font-bold text-2xl md:text-3xl text-primary-brand mb-3">
-          PARTNER RESMI KAMI
+          Partner Resmi Kami
         </h2>
 
         <p className="text-text-muted text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
@@ -32,7 +32,7 @@ export default function AnimatedPartnerSection() {
         className="glass px-12 py-6 rounded-2xl border border-outline-primary/40 shadow-sm flex flex-col items-center justify-center transition-all hover:shadow-md hover:bg-white/40 group"
 
       >
-        <span className="text-lg font-bold text-text-muted uppercase tracking-widest">
+        <span className="text-lg font-bold text-text-muted tracking-widest">
           Kunjungi JOS Property
         </span>
         <a
@@ -46,7 +46,7 @@ export default function AnimatedPartnerSection() {
             alt="Logo Jos Property"
             width={160}
             height={48}
-            className="object-contain h-24 md:h-28 w-auto opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+            className="object-contain h-16 md:h-20 w-auto opacity-80 group-hover:opacity-100 transition-opacity duration-300"
           />
         </a>
       </motion.div>
