@@ -29,14 +29,30 @@
 }
 
 @utility glass {
-  /* 1. Efek Blur dan Base Gradient */
-  @apply backdrop-blur-lg bg-gradient-to-br from-white/15 to-white/5;
+  /* 1. FALLBACK: Warna solid jika GPU iOS gagal render (Mencegah Layar Putih) */
+  background-color: rgba(255, 255, 255, 0.95);
 
-  /* 2. Garis Tepi Kaca */
+  /* Garis Tepi Kaca & Shadow milikmu (tetap dirender di semua kondisi) */
   @apply border border-outline-primary;
 
   /* 3. Efek Refraction (Inner Shadow Putih) + Drop Shadow Hitam di luar */
   @apply shadow-[inset_1px_1px_2px_rgba(255,255,255,0.4)] shadow-black/10;
+
+  /* 2. EFEK GLASS: Hanya jalan jika didukung dan stabil di GPU */
+  @supports (backdrop-filter: blur(12px)) or (-webkit-backdrop-filter: blur(12px)) {
+    /* Reset warna solid fallback, kembalikan ke gradient bawaanmu */
+    background-color: transparent;
+    @apply bg-gradient-to-br from-white/15 to-white/5;
+    @apply backdrop-blur-lg;
+
+    /* 🔴 FIX IOS 26 WEBKIT: Memaksa isolasi layer 3D agar tak bentrok dengan OS */
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    will-change: transform;
+
+    /* Mencegah efek blur meluber keluar dari border-radius */
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+  }
 }
 
 h1,
