@@ -37,9 +37,7 @@ export default function AnimatedHeroSection() {
       <motion.span
         variants={fadeInUp}
         initial="initial"
-        whileInView="whileInView"
-        viewport={fadeInUp.viewport}
-        transition={fadeInUp.transition}
+        animate="whileInView"
         className="text-secondary-brand font-bold tracking-widest uppercase text-sm mb-2"
       >
         Investasi Masa Depan Anda
@@ -49,9 +47,7 @@ export default function AnimatedHeroSection() {
       <motion.h1
         variants={fadeInUp}
         initial="initial"
-        whileInView="whileInView"
-        viewport={fadeInUp.viewport}
-        transition={{ ...fadeInUp.transition, delay: 0.1 }}
+        animate="whileInView"
         className="text-[36px] md:text-[52px] text-primary-brand leading-[1.2] font-extrabold max-w-4xl"
       >
         Pusat Jual Beli dan
@@ -62,9 +58,7 @@ export default function AnimatedHeroSection() {
       <motion.p
         variants={fadeInUp}
         initial="initial"
-        whileInView="whileInView"
-        viewport={fadeInUp.viewport}
-        transition={{ ...fadeInUp.transition, delay: 0.2 }}
+        animate="whileInView"
         className="mt-4 text-lg md:text-xl text-text-muted max-w-2xl leading-relaxed"
       >
         Proses mudah, aman, dan transparan untuk setiap kebutuhan properti Anda.
@@ -74,9 +68,7 @@ export default function AnimatedHeroSection() {
       <motion.div
         variants={scaleIn}
         initial="initial"
-        whileInView="whileInView"
-        viewport={scaleIn.viewport}
-        transition={{ ...scaleIn.transition, delay: 0.3 }}
+        animate="whileInView"
         className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-5 w-full"
       >
         <a
@@ -99,9 +91,7 @@ export default function AnimatedHeroSection() {
       <motion.div
         variants={fadeInUp}
         initial="initial"
-        whileInView="whileInView"
-        viewport={fadeInUp.viewport}
-        transition={{ ...fadeInUp.transition, delay: 0.3 }}
+        animate="whileInView"
         className="mt-12 glass p-6 md:p-8 rounded-3xl border border-outline-primary/40 shadow-lg max-w-3xl w-full text-center"
       >
         <h2 className=" font-bold text-2xl md:text-3xl text-primary-brand mb-3">
@@ -110,9 +100,7 @@ export default function AnimatedHeroSection() {
         <motion.p
           variants={fadeInUp}
           initial="initial"
-          whileInView="whileInView"
-          viewport={fadeInUp.viewport}
-          transition={{ ...fadeInUp.transition, delay: 0.2 }}
+          animate="whileInView"
           className="mt-4 text-lg md:text-xl text-text-muted max-w-2xl leading-relaxed"
         >
           Karya Harja Property adalah mitra terpercaya dalam jual beli
