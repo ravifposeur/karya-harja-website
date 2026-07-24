@@ -2,7 +2,7 @@
 
 import { useEffect } from 'react';
 
-export default function ErudaDevTools() {
+export default function ErudaTools() {
   useEffect(() => {
     // Hanya jalankan di browser
     if (typeof window !== 'undefined') {

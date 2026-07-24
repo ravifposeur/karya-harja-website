@@ -166,7 +166,7 @@ export default async function LandingPage() {
       </footer>
 
       <FloatingWhatsApp />
-      <ErudaDevTools />
+      <ErudaTools />
     </main>
   );
 }
