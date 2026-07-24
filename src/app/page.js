@@ -7,7 +7,7 @@ import AnimatedMapSection from "@/components/AnimatedMapSection";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 import Maintenance from "@/components/Maintenance";
 import AnimatedPartnerSection from "@/components/AnimatedPartnerSection";
-import ErudaDevTools from '@/components/ErudaDevTools';
+import ErudaTools from '@/components/ErudaTools';
 import { client } from "@/sanity/lib/client";
 
 export default async function LandingPage() {
