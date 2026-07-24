@@ -31,7 +31,7 @@ export default function AnimatedHeroSection() {
   return (
     <section
       id="beranda"
-      className="relative pt-40 pb-12 px-6 md:px-16 w-full max-w-7xl mx-auto flex flex-col items-center text-center z-10 min-h-[85vh] justify-center gap-4"
+      className="relative pt-40 pb-12 px-6 md:px-16 w-full max-w-7xl mx-auto flex flex-col items-center text-center z-10 justify-center gap-4"
     >
       {/* Badge */}
       <motion.span
